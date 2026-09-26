@@ -14,13 +14,7 @@ detection and response capabilities of the environment.
 
 ## Architecture
 
-### Network & compute
-
-![AWS Network Architecture](architecture/network-architecture.svg)
-
-### Detection & automated response
-
-![AWS Detection and Response Architecture](architecture/detection-response-architecture.svg)
+![AWS Cloud Security Architecture](architecture/aws-security-architecture.png)
 
 ## Architecture Components
 
