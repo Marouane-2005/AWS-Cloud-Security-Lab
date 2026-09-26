@@ -1,0 +1,44 @@
+<svg width="680" height="450" viewBox="0 0 680 450" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+<rect width="680" height="450" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+
+<rect x="60" y="10" width="170" height="40" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="1"/>
+<text x="145" y="35" text-anchor="middle" font-size="14" font-weight="bold" fill="#412402">AWS WAF</text>
+<line x1="145" y1="50" x2="145" y2="58" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="60" y="60" width="170" height="40" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="1"/>
+<text x="145" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill="#412402">ALB</text>
+<line x1="145" y1="100" x2="145" y2="108" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="440" y="10" width="180" height="40" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="530" y="35" text-anchor="middle" font-size="14" font-weight="bold" fill="#26215C">IAM roles + MFA</text>
+<line x1="530" y1="50" x2="530" y2="108" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="40" y="110" width="600" height="300" rx="20" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="60" y="140" font-size="14" font-weight="bold" fill="#04342C">VPC · 10.10.0.0/16</text>
+
+<rect x="60" y="160" width="170" height="140" rx="12" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="75" y="187" font-size="14" font-weight="bold" fill="#042C53">Public subnet</text>
+<text x="75" y="203" font-size="12" fill="#0C447C">10.10.1.0/24</text>
+<rect x="75" y="218" width="140" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="145" y="242" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C2C2A">EC2 · web/app</text>
+<text x="145" y="260" text-anchor="middle" font-size="12" fill="#444441">Derriere l'ALB</text>
+
+<rect x="250" y="160" width="170" height="140" rx="12" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="265" y="187" font-size="14" font-weight="bold" fill="#042C53">Private app</text>
+<text x="265" y="203" font-size="12" fill="#0C447C">10.10.11.0/24</text>
+<rect x="265" y="218" width="140" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="335" y="242" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C2C2A">EC2 · app</text>
+<text x="335" y="260" text-anchor="middle" font-size="12" fill="#444441">No public IP</text>
+
+<rect x="440" y="160" width="170" height="140" rx="12" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="455" y="187" font-size="14" font-weight="bold" fill="#042C53">Private data</text>
+<text x="455" y="203" font-size="12" fill="#0C447C">10.10.21.0/24</text>
+<rect x="455" y="218" width="140" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="525" y="242" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C2C2A">RDS · MySQL</text>
+<text x="525" y="260" text-anchor="middle" font-size="12" fill="#444441">Private only</text>
+
+<rect x="60" y="330" width="550" height="50" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="335" y="352" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C2C2A">VPC endpoints</text>
+<text x="335" y="368" text-anchor="middle" font-size="12" fill="#444441">S3, EC2, SSM — pas de NAT Gateway</text>
+</svg>
